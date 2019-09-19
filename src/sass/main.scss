@@ -1,0 +1,118 @@
+$primary: #0CCF90;
+$black: #333;
+$tomato: tomato;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;  
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #eee;
+  padding: 3em;
+  color: $black;
+}
+
+.app {
+  max-width: 100%;
+  min-height: 34em;
+  background: #fff;
+  padding: 2em;
+  display: flex;
+  border-top: 4px solid #0CCF90;
+
+  header{
+    width: 30%;
+    min-height: 20em;
+    position: relative;
+    padding-right: 2em;
+    border-right: 1px solid #eee;
+
+    h1{
+      color: $primary;
+      font-size: 1.1em;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    h2{
+      font-size: 5em;
+      text-align: center;
+      margin: 1em 0 0.1em 0;
+      color: $primary;
+    }
+
+    nav{
+      display: flex;
+      justify-content: center;
+
+      i{
+        margin: 0.5em;
+        padding: 0.6em;
+        border: 2px solid $black;
+        border-radius: 1.4em;
+        &:hover{
+          color: $primary;
+          border-color: $primary;
+          cursor: pointer;
+        }
+      }
+    }
+
+    input {
+      margin: 2em 0 0.5em 0;
+      width: 100%;
+      height: 3.5em;
+      color: $primary;
+      appearance: none;
+      box-shadow: none;
+      border: none;
+      border: 1px solid #ccc;
+      padding: 0.5em;
+
+      &:focus{
+        border-color: $primary;
+      }
+
+      &::placeholder {
+        color: #444;
+      }
+    }
+    h6{
+      margin-bottom: 2em;
+    }
+  }
+
+  main {
+    width: 70%;
+    padding-left: 2em;
+    h3{
+      margin-bottom: 2em;
+      font-size: 1.3em;
+      color: $primary;
+    }
+    ul{
+      list-style: none;
+      li{
+        display: flex;
+        margin-bottom: 0.5em;
+        font-size: 1.2em;
+        span{
+          flex-grow: 150;
+        }
+        i{
+          flex-grow: 1;
+          color: $primary;
+          &:hover{
+            color: $tomato;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
